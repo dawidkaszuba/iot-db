@@ -6,6 +6,7 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <include file="db/changelog/2025_07_29_create_basic_tables/create_basic_tables.xml"/>
+    <include file="db/changelog/2025_10_25_create_coal_consumption_table/create_coal_consumption_table.xml"/>
 
 
 </databaseChangeLog>
