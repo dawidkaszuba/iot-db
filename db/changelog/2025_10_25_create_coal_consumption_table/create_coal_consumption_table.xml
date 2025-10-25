@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="2025_10_25_create_coal_consumption_table_tag" author="dawid.kaszuba">
+        <tagDatabase tag="2025_10_25_create_coal_consumption_table"/>
+    </changeSet>
+
+    <changeSet id="create_coal_consumption_table" author="dawid.kaszuba">
+        <sqlFile path="db/changelog/2025_10_25_create_coal_consumption_table/create_coal_consumption_table.sql"/>
+        <rollback>
+            <sqlFile path="db/changelog/2025_10_25_create_coal_consumption_table/rollback_create_coal_consumption_table.sql"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
